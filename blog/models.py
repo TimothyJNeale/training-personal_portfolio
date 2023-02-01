@@ -6,3 +6,5 @@ class Blog(models.Model):
     date = models.DateField(default=date.today)
     entry = models.TextField()
  
+    def __str__(self):
+        return self.title
