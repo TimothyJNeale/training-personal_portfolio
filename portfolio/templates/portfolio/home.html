@@ -2,9 +2,15 @@
 
 {% load static %}
 
-<a href="{% static 'portfolio/Standard_Procedure_By_Tony_L_Brown_SAMPLE.pdf' %}"> PDF File</a>
-
-<img src="{% static 'portfolio/moon.jpg' %}">
+<a href="{% static 'portfolio/Standard_Procedure_By_Tony_L_Brown_SAMPLE.pdf' %}">Standard Procedure</a> by Tony Brown
+<br/>
+<br/>
+ 
+<a href="{% url 'blog:all_blogs' %}">All Blogs</a>
+<br/>
+<br/>
+ 
+<img src="{% static 'portfolio/moon.jpg' %}" height="600">
 
 {% for project in projects %}
 
